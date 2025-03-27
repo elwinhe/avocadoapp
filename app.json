@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "AvocadoApp",
-    "slug": "avocado-app",
+    "slug": "avocadoapp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -21,16 +21,31 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "permissions": [
+        "CAMERA"
+      ],
+      "package": "com.elwinhe.avocadoapp"
     },
     "web": {
       "favicon": "./assets/favicon.png"
     },
     "extra": {
       "eas": {
-        "projectId": "b6cc5630-9f1e-44e3-ae75-152cb7a06a00"
+        "projectId": "bc46b9ce-c64c-4ba2-b665-8cd4ac885e57"
       }
     },
-    "owner": "ere29"
+    "owner": "elwinhe",
+    "plugins": [
+      [
+        "expo-build-properties",
+        {
+          "android": {
+            "compileSdkVersion": 34,
+            "targetSdkVersion": 34
+          }
+        }
+      ]
+    ]
   }
 }
